@@ -29,10 +29,10 @@ namespace MassTransitConsumer
 
                 x.UsingRabbitMq((context, cfg) =>
                 {
-                    cfg.Host("fly-01.rmq.cloudamqp.com", "pygypsvv", h =>
+                    cfg.Host("localhost", "***", h =>
                     {
-                        h.Username("pygypsvv");
-                        h.Password("LBOKm0o8gWENmHw0zuVMMOVXDuOMS-am");
+                        h.Username("******");
+                        h.Password("******");
                     });
 
                     cfg.ConfigureEndpoints(context);
